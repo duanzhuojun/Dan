@@ -53,8 +53,8 @@ function billme()
 			order.THETAES.value = 0.087266;
             order.subtotalBox.value= (W*0.545*LATNH+W*0.106*LAWAH+WL*LAWL)/LAES
 
-            var JRFH=order.subtotalBox.value*Math.sin(THETATNH+THETAAH);
-            var JRFV=order.subtotalBox.value*Math.cos(THETATNH+THETAAH)+W*0.545+W*0.106+WL;
+            var JRFH=order.subtotalBox.value*Math.sin(THETATNH+0.087266);
+            var JRFV=order.subtotalBox.value*Math.cos(THETATNH+0.087266)+W*0.545+W*0.106+WL;
 
 
 			order.LATNH.value=LATNH;
