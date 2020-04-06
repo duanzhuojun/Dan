@@ -26,7 +26,8 @@ function billme()
 
 			document.order.WTNH.value=document.order.WTNH.value
 			document.order.WAH.value=document.order.WAH.value
-			document.order.subtotalBox.value=document.order.subtotalBox.value
+			//document.order.subtotalBox.value=document.order.subtotalBox.value
+	              document.order.subtotalBox.value=document.order.subtotalBox.value.toFixed(2);
         
             if (document.order.discountRB[0].checked) {
                 document.order.subtotalBox.value= (order.subtotalBox.value)*0.9
