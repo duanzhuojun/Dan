@@ -12,12 +12,12 @@ function billme()
 
         //These lines define the variables.
         
-         var   W= parseInt(v1);
-         var   LATNH= parseInt(v2);
-         var   LAWAH= parseInt(v3);
-         var   WL= parseInt(v4);
-         var   LAWL= parseInt(v5);
-         var   LAES= parseInt(v6);
+         var   W= parseFloat(v1);
+         var   LATNH= parseFloat(v2);
+         var   LAWAH= parseFloat(v3);
+         var   WL= parseFloat(v4);
+         var   LAWL= parseFloat(v5);
+         var   LAES= parseFloat(v6);
 
         //These lines make sure that variables 1, 2, and 3 are numbers.
             order.WTNH.value= W*0.545
