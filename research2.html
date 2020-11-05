@@ -28,206 +28,75 @@
     </style>
 </head>
 <body>
-    <div class="header_bg1">
-        <div class="container">
-            <div class="row header">
-                <div class="logo navbar-left">
-                    <h1 style="color:whitesmoke;">University of Hartford Physical Therapy Simulation</h1>
-                </div>
-                <div class="h_search navbar-right">
-                    <form>
-                        <input type="text" class="text" value="Enter text here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter text here';}">
-                        <input type="submit" value="search">
-                    </form>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="row h_menu">
-                <nav class="navbar navbar-default navbar-left" role="navigation">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <!--<li><a href="index.html">Home</a></li>-->
-                            <li ><a href="index.html">Simulation I</a></li>
-                            <li class="active"><a href="research2.html">Simulation II</a></li>
-                            <!--<li><a href="teaching.html">Teaching</a></li>
-    <li><a href="contact.html">Contact</a></li>-->
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                    <!-- start soc_icons -->
-                </nav>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <div class="main_bg">
-        <!-- start main -->
-        <div class="container">
-            <div class="about row">
-                <h2>Simulation of Back and Arms II</h2>
-                <p class="para">
-                    <font color="red">Objectives:</font> 
-                    1.	Find the optimal position for lifting a load.
-                    &nbsp    2.	Apply the conditions of equilibrium to determine the amount of force that is exerted by the person’s Erector Spinae muscle FES when the person is bending over to support a load.
-                    &nbsp 3.	Calculate the magnitude of the Joint Reaction Force JRF.
-                    &nbsp 4.	Find out how the force on the person’s erector spinae muscle and the joint reaction force depend on positions.
-
-</p>
-                <!-- <a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a> -->
-            </div>
-        </div>
-    </div><!-- end main -->
-    <div class="main_btm">
-        <!-- start main_btm -->
-        <div class="container">
-            <div class="main row">
-                
-                <div class="col-md-6 content_right">
-          
-                        <a href="images/Therapy2.png" download>
-                            <img src="images/Therapy2.png" alt="" class="img-responsive" width="80%" height="80%" align="middle">
-                        </a>
-                        
-                </div>
-                <div class="col-md-6 content_right">
-                    
-                        <h4><span>Instruction:</span></h4>
-                        <p class="para">
-                            The simulation is based on a normally proportioned person. 
-                            You can adjust the gestures of the person by inputting different values of &#920<sub>TNH</sub>  and &#920<sub>AH</sub>. 
-                            For example, &#920<sub>TNH</sub>=0&#730 and &#920<sub>AH</sub>=90&#730 when a person stands with arms leveled. 
-
-</p>
-                        <p class="para">When you try to find the optimal position for lifting a load to avoid potential injury, you aim to find low values on erector spinae muscle and the joint reaction force. 
-                            (Hint: in order to achieve the goal, please control variables by keeping weight and height of the person, weight of the load fixed and changing  &#920<sub>TNH</sub>  and &#920<sub>AH</sub>  values.)
-                            </p>
-
-                    <!--    <br>Weight of the person W= <input type="text" name="W" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">lb.
-                            &nbsp&nbsp&nbsp&nbsp&nbsp Height of the person H= <input type="text" name="H" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">m
-                        </br>
-                        &#920<sub>TNH</sub>= <input type="text" name="THETATNH" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">&#730
-                        &nbsp&nbsp&nbsp&nbsp&nbsp &#920<sub>AH</sub>= <input type="text" name="THETAAH" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">&#730
-                        &nbsp&nbsp&nbsp&nbsp&nbsp &#920<sub>ES</sub>= 0.5*&#920<sub>TNH</sub>= <input type="text" name="THETAES" size="6" value="NA" />&#730
-                        
--->
-                        <form id=order name=order>
-                            Weight of the person W= <input type="text" name="W" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">lb.
-                            &nbsp&nbsp&nbsp&nbsp&nbsp Height of the person H= <input type="text" name="H" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">m
-                            <br>
-                            &#920<sub>TNH</sub>= <input type="text" name="THETATNH" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">&#730
-                            &nbsp&nbsp&nbsp&nbsp&nbsp &#920<sub>AH</sub>= <input type="text" name="THETAAH" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">&#730
-                            &nbsp&nbsp&nbsp&nbsp&nbsp &#920<sub>ES</sub>= 5&#730=<input type="text" name="THETAES" size="6" value="fixed" /> &#730
-
-                            <table style="width:100%">
-                                <!--   <tr>
-            <th colspan="3">
-                Weight of the person W= <input type="text" name="W" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">lb.
-                &nbsp&nbsp&nbsp&nbsp&nbsp Height of the person H= <input type="text" name="H" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">m
-                <br>
-                &#920<sub>TNH</sub>= <input type="text" name="THETATNH" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">&#730
-                &nbsp&nbsp&nbsp&nbsp&nbsp &#920<sub>AH</sub>= <input type="text" name="THETAAH" size="6" value="0" onmouseover="porkImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">&#730
-                &nbsp&nbsp&nbsp&nbsp&nbsp &#920<sub>ES</sub>= 0.5*&#920<sub>TNH</sub>= <input type="text" name="THETAES" size="6" value="NA" />&#730
-            </th>
-        </tr> -->
-
-                                <tr>
-                                    <td></td>
-                                    <td>&nbsp Force</td>
-                                    <td>&nbsp Lever arm</td>
-                                </tr>
-                                <tr>
-                                    <td>&nbsp TNH</td>
-                                    <td>&nbsp W<sub>TNH</sub>= <input type="text" name="WTNH" size="6" value="NA" />lb.</td>
-                                    <td>
-                                        &nbsp
-                                        LA<sub>TNH</sub>=<input type="text" name="LATNH" size="6" value="NA" />
-                                        m
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>&nbsp AH</td>
-                                    <td>&nbsp W<sub>AH</sub>= <input type="text" name="WAH" size="6" value="NA" />lb.</td>
-                                    <td>
-                                        &nbsp
-                                        LA<sub>WAH</sub>=<input type="text" name="LAWAH" size="6" value="NA" />
-                                        m
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>&nbsp Load</td>
-                                    <td>
-                                        &nbsp WL=<input type="text" name="WL" size="6" value="0" onmouseover="fishImage()" onmouseout="document.getElementById('mainpic').src='images/restaurant.jpg'">
-                                        lb.
-                                    </td>
-                                    <td>
-                                        &nbsp
-                                        LA<sub>WL</sub>=<input type="text" name="LAWL" size="6" value="NA" />
-                                        m
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>&nbsp Es</td>
-                                    <td>
-                                        &nbsp
-                                        The F<sub>ES</sub> is: <input type="text" name="subtotalBox" size="6" value="NA" />lb.
-                                    </td>
-                                    <td>
-                                        &nbsp
-                                        LA<sub>ES</sub>=<input type="text" name="LAES" size="6" value="NA" />
-                                        m
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">&nbsp JRF=<input type="text" name="JRF" size="6" value="NA" />lb.</td>
-
-                                </tr>
-                            </table>
-                            <br />
-                            <input type="button" name="calcBtn" value="Calculate!" onclick="billme(document.order)" />
-                            <input type="reset" name="resetBtn" value="Clear Form" />
-
-                            <!--<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>-->
-                            <!--<br>
-                            <input type="button" name="calcBtn" value="Check out!" onclick="billme(document.order)" />
-                            <input type="reset" name="resetBtn" value="Clear Form" />
-                            <br>
-
-
-
-                            <br>
-                            The F<sub>AH</sub> is: <input type="text" name="subtotalBox" size="6" value="0" /><br>
-
-    -->
-</div>
-            </div>
-            
-            <p align=center>
-
-                
-
-            </p>
-        </div>
-    </div>
-    <div class="footer_bg">
-        <!-- start footer -->
-        <div class="container">
-            <div class="row  footer">
-                <div class="copy text-center">
-                    <p class="link"><span>&#169; All rights reserved.<a href="http://cs.gsu.edu/" target="_blank" title="Yunmei(Heather) Lu ">Computer Science Department</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="scripts\base2.js"></script>
+    <p><strong>CS 149: Programming Fundamentals JMU Coding Exam #2 Fall 2020</strong></p>
+<p>This work complies with the JMU Honor Code. I have neither given nor received unauthorized assistance, and I will not discuss the exam contents with anyone who has not taken it.</p>
+<h3>Please:&nbsp;</h3>
+<p>complete your name in the JavaDoc for the <span style="color: #0000ff;">Game class</span>. <span style="text-decoration: underline;">You do not need to pass Checkstyle, but please make it readable.</span></p>
+<ol>
+<li>Write some minimal documentation and stubs for both classes and methods. [10 min]</li>
+<li>Write stubs for the two methods and run against autolab tests to make sure that it compiles and runs. [5 min]</li>
+<li>Implement/test&nbsp;<strong>canPlay</strong>method&nbsp;<strong>.</strong>&nbsp;[10 min]</li>
+<li>Implement/test&nbsp;<strong>inDeck</strong> [15 min]</li>
+<li>Submit final submission to&nbsp;<a href="https://autolab.cs.jmu.edu/">https://autolab.cs.jmu.edu</a></li>
+</ol>
+<p><strong>Grading:</strong></p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><span style="text-decoration: underline;">canPlay</span> Method is worth 25 points</li>
+<li><span style="text-decoration: underline;">inDeck</span> Method is worth 20 points</li>
+<li>5 points will be given for instructor points for elegance and style.</li>
+</ul>
+</li>
+<li>
+<p>Below is an example class template with&nbsp;<em><strong>key pieces (and javadoc) missing.</strong></em><em><strong></strong></em></p>
+</li>
+</ul>
+<pre><em><strong></strong></em>/** <br />  * Game - &nbsp;Exam2: a simple card game. <br />  * @author <br />  * @version 11-20 <br />  * I have abided by the JMU Honor Code by submitting this file. <br />  */ <br /><br />public class Game {&nbsp;&nbsp;  <br />   public static int canPlay(int pile1, int pile2, int value) {&nbsp;&nbsp;  <br />   }&nbsp;&nbsp;  <br /><br />   public static int inDeck(int[] cards, int value) {&nbsp;  <br />   }<br /><br />}</pre>
+<p>&nbsp;</p>
+<h3>The Game Lite.</h3>
+<p>You will be writing methods for a card game.&nbsp; For the purpose of the exam, you must write one class, Game. You will be writing two methods for this class.&nbsp; The Game consists of 8 total cards 2-9 and two discard piles up and down.&nbsp; You must try to discard all cards in your deck of 9 cards by placing them on one of the two discard piles:</p>
+<ul>
+<li>Cards may be placed on pile 1 if they are greater in value than the value on top of pile 1.&nbsp;</li>
+<li>Cards may be placed on pile 2 if they are lower in value than the value on top of pile 2.&nbsp;</li>
+<li>Pile 1 starts with the value 1 and Pile 2 starts with the value 10.&nbsp;</li>
+</ul>
+<p>You shuffle the deck then pull one card at a time and determine if you can play it on one of the piles.&nbsp;</p>
+<h3>Tasks:</h3>
+<p>The first method you must write is a&nbsp;<strong>canPlay</strong>&nbsp;method to determine if the currently drawn &nbsp;card can be played.&nbsp; The second is a&nbsp;<strong>inDeck</strong> method that will determine if the given card value is in the given deck of 8 cards.&nbsp;The two methods,&nbsp;<strong>canPlay</strong>&nbsp;and&nbsp;<strong>inDeck</strong>, must be implemented in the class Game.</p>
+<ul>
+<li><strong>canPlay&nbsp;</strong>method:&nbsp;</li>
+</ul>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The&nbsp;<strong>canPlay&nbsp;</strong>method will take an 3 integer parameters the first the value of pile1, the second the value of pile2, and the third the card being drawn for play. You may assume that the values of pile1, 2 and the card are valid numbers.&nbsp; This method should return either a 0 if the card cannot be played on either pile, a 1 if the card can be played on pile 1, a 2 if the card can be played on pile2, or a 3 if the card can be played on either pile 1 or pile2.</li>
+<li>For Example 1: Given a pile1 of 3 a pile2 of 5 and a card value of 4 you should return a 3 indicating it can be played on either pile. Example 2: pile1: 7, pile2: 2, and card: 5 should return 0 for not being playable on either pile.</li>
+</ul>
+</li>
+<li><strong>inDeck</strong>&nbsp;method
+<ul>
+<li>The&nbsp;<strong>inDeck</strong>method will take two parameters. The first parameter will be the deck - &nbsp;an array of integers that is has 8 cards in it[number values 2-9].&nbsp; The second parameter will be an integer card value to see if this value is in the deck. &nbsp;&nbsp;You may assume that the card deck will be an array of 8 integers and not null.&nbsp;
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Your method should return the last index value of where the card is found(the deck may contain duplicates)&nbsp;<em>if it is found.</em></li>
+<li><em>Your method should return a 9 &nbsp;if the value of the card is not found in the deck(the value of the card is still between 2 and 9 ).</em></li>
+<li><em>Your method should return 10 if the value of the card is invalid(ie the card value is not between 2 and 9 in value).&nbsp;</em><em></em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>For example:
+<ul>
+<li>For an array of {7,4, 5, 3, 2, 8, 9,6} and a card value of&nbsp;7 the method should return a 0(zero) as the 7 is located at index 0 for the array. Or if a value of 11 is passed for the previous array you should return a 10 for an invalid value to be checked.</li>
+<li>For an array of {4, 7, 5, 3, 2, 7, 9, 6} and a card value of&nbsp;7 the method should return a 5 as the 7 is located at last index 5 for the array. Or if a value of 8 is passed to the method, you should return 9 for not finding the card value in the deck.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
 
 </body>
 </html>
